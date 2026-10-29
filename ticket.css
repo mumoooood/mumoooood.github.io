@@ -77,4 +77,3 @@ body{background:var(--pg);color:var(--ink)}
 
 .sound-btn{opacity:.5}
 .footer p{font-size:12px}
-.brand img[src$=".gif"]{border-radius:6px;background:#000}
