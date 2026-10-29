@@ -1,0 +1,79 @@
+/* ===== mumoooood · ticket theme (black / white / grey) ===== */
+:root{--mono:'IBM Plex Mono','Space Mono','Courier Prime','Courier New',ui-monospace,monospace;--pg:#CFCFCB;--paper:#E7E7E3;--ink:#161616;--mut:#6B6B67}
+body{background:var(--pg);color:var(--ink)}
+.page{background:var(--pg)}
+.page-body{position:relative}
+.strip{background:#111;color:#fff;font:600 11px/1 var(--mono);letter-spacing:.2em;display:flex;justify-content:space-between;padding:11px 16px;text-transform:uppercase}
+.strip span:last-child{opacity:.65}
+.hero{height:640px}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.16em;border:1px solid rgba(255,255,255,.8);display:inline-block;padding:7px 10px;align-self:flex-start}
+.hero h1{font-size:64px}
+.section{padding:16px 16px 0}.section:first-of-type{padding-top:16px}
+/* paper ticket cards: rounded + side slots like the reference */
+.card{background:var(--paper);border-radius:14px;padding:28px 22px;gap:12px;position:relative;
+ -webkit-mask:radial-gradient(circle 13px at 0 44px,#0000 96%,#000),radial-gradient(circle 13px at 100% 44px,#0000 96%,#000);-webkit-mask-composite:source-in;
+ mask:radial-gradient(circle 13px at 0 44px,#0000 96%,#000),radial-gradient(circle 13px at 100% 44px,#0000 96%,#000);mask-composite:intersect}
+.th{margin:-28px -22px 8px;height:44px;padding:0 26px;display:flex;align-items:center;justify-content:space-between;border-bottom:1.5px dashed #8d8d89;font:500 11px/1 var(--mono);letter-spacing:.16em;color:var(--mut)}
+.card h2,.h2o{font-size:24px;line-height:1.35;margin:0}
+.kicker{font:500 11px/1.4 var(--mono);letter-spacing:.14em;color:var(--mut);text-transform:uppercase}
+.note,.hint{color:var(--mut)}
+.step b{border-radius:0;background:transparent;color:var(--ink);border:1.5px solid var(--ink);font:600 14px/1 var(--mono)}
+/* bottles section sits straight on the grey page, cards scroll sideways */
+.sec-b{padding:28px 0 0}
+.sec-h{margin:0 16px 12px;display:flex;justify-content:space-between;font:500 11px/1 var(--mono);letter-spacing:.16em;color:#4b4b48}
+.h2o{margin:0 16px 4px}
+.hint.o{margin:0 16px 14px;font-size:15px;line-height:1.6;color:#4b4b48}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 14px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.bottle{flex:0 0 78%;max-width:300px;scroll-snap-align:center;background:var(--paper);border:none;border-radius:14px;padding:0 22px 22px;display:flex;flex-direction:column;gap:0;text-align:left;color:var(--ink);font:inherit;cursor:pointer;position:relative;
+ -webkit-mask:radial-gradient(circle 13px at 0 168px,#0000 96%,#000),radial-gradient(circle 13px at 100% 168px,#0000 96%,#000);-webkit-mask-composite:source-in;
+ mask:radial-gradient(circle 13px at 0 168px,#0000 96%,#000),radial-gradient(circle 13px at 100% 168px,#0000 96%,#000);mask-composite:intersect}
+.bottle .im{display:block;position:relative;height:168px;padding:36px 0 0;margin:0 -22px 0;border-bottom:1.5px dashed #8d8d89;box-sizing:border-box;margin-bottom:22px}
+.bottle .im img{display:block;height:100px;width:auto;margin:0 auto;mix-blend-mode:multiply}
+.bottle .im .lb{position:absolute;left:25px;top:60px;width:108px;height:36px;background:rgba(240,240,236,.92);border:1px solid #9a9a96;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-family:var(--mono);color:#111;overflow:hidden;white-space:nowrap}
+.bottle .im .lb b{font-size:7px;font-weight:700;letter-spacing:.04em}
+.bottle .im .lb i{font-size:5px;font-style:normal;letter-spacing:.04em;color:#444}
+.bottle[aria-pressed="true"] .im img{filter:invert(1);mix-blend-mode:screen}
+.bottle .nm{font:500 20px/1.2 var(--mono);letter-spacing:.02em;margin-bottom:12px}
+.bottle .rw{display:flex;justify-content:space-between;font:500 12px/1 var(--mono);color:var(--mut);letter-spacing:.06em;gap:8px}
+.bottle .ln{display:block;height:1px;margin:14px 0 16px;background:linear-gradient(90deg,transparent,#777 12%,#777 88%,transparent);position:relative;border:.25px solid #141413;opacity:.5}
+.bottle .ln:after{content:"";position:absolute;right:12%;top:-2px;width:5px;height:5px;border-radius:50%;background:#555}
+.bottle .th-n{display:block;font-size:20px;font-weight:700;line-height:1.35}
+.bottle .ds{display:block;font-size:15px;line-height:1.65;margin:6px 0 22px;flex:1}
+.bottle .no{display:block;font:500 13px/1 var(--mono);letter-spacing:.08em;color:var(--ink)}
+.bottle .no:before{content:"[+] "}
+.bottle[aria-pressed="true"]{background:#161616;color:#E7E7E3}
+.bottle[aria-pressed="true"] .rw,.bottle[aria-pressed="true"] .no{color:#E7E7E3}
+.bottle[aria-pressed="true"] .im{border-bottom-color:#666}
+.bottle[aria-pressed="true"] .ln{background:linear-gradient(90deg,transparent,#aaa 12%,#aaa 88%,transparent)}
+.bottle[aria-pressed="true"] .no:before{content:"[✓] "}
+.bottle[aria-pressed="true"] .cap{fill:#E7E7E3}
+.bottle:focus-visible{outline:2px solid #111;outline-offset:3px}
+/* blend result: table rules like the cart reference */
+.mix{margin:4px 16px 0;background:transparent;color:var(--ink);border-top:1.5px solid #555;border-bottom:1.5px solid #555;padding:16px 0;display:flex;flex-direction:column;gap:6px}
+.mix .kicker{color:#4b4b48}
+.mix-title{font-size:20px;font-weight:700}
+/* IG boarding pass */
+.pass{display:block;max-width:640px;margin:0 auto;background:var(--paper);text-decoration:none;color:var(--ink);border:1.5px solid #161616;border-radius:14px;overflow:hidden}
+.pass .h{background:#161616;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;font:600 11px/1 var(--mono);letter-spacing:.18em}
+.pass .bd{display:flex}
+.pass .m{flex:1;padding:16px;border-right:2px dashed #161616}
+.pass .m small{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.12em;color:var(--mut)}
+.pass .m b{display:block;font-size:18px;line-height:1.35;margin:4px 0 8px}
+.pass .m em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:30px;line-height:1}
+.pass .s{width:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px;font:600 10px/1 var(--mono);letter-spacing:.14em}
+.pass .s svg{width:30px;height:30px;fill:none;stroke:#161616;stroke-width:1.8}
+.pass .bars{height:44px;width:64px;background:repeating-linear-gradient(90deg,#161616 0 2px,var(--paper) 2px 4px,#161616 4px 5px,var(--paper) 5px 8px,#161616 8px 11px,var(--paper) 11px 12px)}
+.chips a{border-radius:0;font:600 13px/1 var(--mono);font-style:normal;letter-spacing:.06em;min-height:44px;border:1.5px solid var(--ink)}
+.chips a[aria-current="page"]{background:#161616;color:#E7E7E3}
+.footer{border-top:1.5px dashed #777;margin-top:28px;padding-top:24px}
+.footer p{color:#333}
+.bar{height:40px;max-width:640px;margin:0 auto 4px;background:repeating-linear-gradient(90deg,#161616 0 2px,var(--pg) 2px 4px,#161616 4px 5px,var(--pg) 5px 8px,#161616 8px 11px,var(--pg) 11px 12px,#161616 12px 13px,var(--pg) 13px 17px)}
+.barno{max-width:640px;margin:0 auto;text-align:center;font:500 11px/1 var(--mono);letter-spacing:.4em;color:#4b4b48;padding-bottom:16px}
+@media (min-width:700px){.rail{justify-content:center}.bottle{flex-basis:300px}}
+
+.card .btn{display:flex;justify-content:space-between;align-items:center;font:500 14px/1 var(--mono);letter-spacing:.06em;background:#161616;color:#E7E7E3;padding:16px;border-radius:2px;text-decoration:none;margin-top:6px}
+.card p{margin:0}
+
+.sound-btn{opacity:.5}
+.footer p{font-size:12px}

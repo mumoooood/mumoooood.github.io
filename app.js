@@ -66,7 +66,7 @@
         audio = new Audio(audioFile);
         audio.loop = true;
         audio.volume = 0.6;
-        audio.play();
+        var pr = audio.play(); if (pr && pr.catch) { pr.catch(function () { stop(); }); }
       } else {
         var AC = window.AudioContext || window.webkitAudioContext;
         if (!AC) { return; }

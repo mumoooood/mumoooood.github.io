@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Noir Carriage · mumoood</title>
+<title>Noir Carriage · mumoooood</title>
 <meta name="description" content="เมืองที่ยังเลือกเดินทางด้วยจังหวะของม้า">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Noir Carriage · mumoood">
+<meta property="og:title" content="Noir Carriage · mumoooood">
 <meta property="og:description" content="เมืองที่ยังเลือกเดินทางด้วยจังหวะของม้า">
 <meta property="og:image" content="https://mumoooood.github.io/noir-carriage-hero.jpg">
 <meta property="og:url" content="https://mumoooood.github.io/noir-carriage.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Sans+Thai:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="ticket.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 </head>
-<body data-sound="clop">
+<body data-sound="clop" data-audio="noir-carriage.mp3">
 <div class="page">
-<img class="page-bg" src="noir-carriage-bg.jpg" alt="">
-<div class="page-veil"></div>
 <div class="page-body">
+<div class="strip"><span>MUMOOOOOD · LANNA LIVING LAB</span><span>ADMIT ONE</span></div>
 <header class="hero">
 <img class="hero-img" src="noir-carriage-hero.jpg" alt="Noir Carriage">
 <div class="hero-shade"></div>
 <div class="hero-content">
 <div class="hero-top">
-<div class="brand"><img src="logo-light.png" alt="mumoood"><span>แบรนด์ที่สร้างภายใต้โครงการ Lanna Living Lab</span></div>
+<div class="brand"><img src="logo-light.png" alt="mumoooood"><span>แบรนด์ที่สร้างภายใต้โครงการ Lanna Living Lab</span></div>
 <button type="button" class="sound-btn" id="sound-btn" aria-pressed="false">เปิดเสียงบรรยากาศ</button>
 </div>
 <div class="hero-bottom">
@@ -36,48 +36,62 @@
 </div>
 </header>
 <main>
-<section class="section"><div class="card">
-<div class="kicker">ลำปางสี่ฉาก · กลิ่นละฉาก</div>
-<h2>เรื่องของฉากนี้</h2>
-<p>ที่สถานีรถม้า เสียงกีบม้าเคาะถนนเป็นจังหวะเดียวกันทั้งวัน กลิ่นหนังเก่า ไม้ และหญ้าข้างทางลอยตามล้อไป</p>
-<p>Noir Carriage คือกลิ่นของคนที่ไม่รีบ เข้ม เงียบ และมีเรื่องเล่าในตัวเอง เหมาะกับค่ำคืนที่อยากอยู่กับตัวเอง</p>
-</div></section>
-<section class="section"><div class="card">
-<h2>สามขวดในเซ็ตนี้</h2>
-<div class="hint">แตะขวดที่อยากลอง เพื่อดูวิธีผสมกลิ่นของคุณเอง</div>
-<button type="button" class="bottle" aria-pressed="false" data-no="1" data-name="ผู้โดยสารเงียบ" data-short="ความสุภาพและความนุ่มนวล"><span class="no">ขวด 1 · แตะเพื่อเลือก</span><span class="name">ผู้โดยสารเงียบ</span><span class="en">Quiet Passenger</span><span class="from">กลิ่นในขวด: น้ำอบไทย</span><span class="meaning">ความนุ่มของน้ำอบไทยที่ห่อหุ้มกลิ่นเข้มไว้ แทนความสุภาพของคนที่นั่งมองเมืองผ่านไป</span></button>
-<button type="button" class="bottle" aria-pressed="false" data-no="2" data-name="ล้อไม้เก่า" data-short="ความมั่นคงและความทรงจำ"><span class="no">ขวด 2 · แตะเพื่อเลือก</span><span class="name">ล้อไม้เก่า</span><span class="en">Old Wheel</span><span class="from">กลิ่นในขวด: Cedarwood</span><span class="meaning">กลิ่นไม้ซีดาร์ของล้อและตัวรถที่ผ่านทางเดิมมานาน แทนความมั่นคงและความทรงจำที่ไม่จางไปไหน</span></button>
-<button type="button" class="bottle" aria-pressed="false" data-no="3" data-name="ลมวิ่งตามล้อ" data-short="อิสระและความสดชื่น"><span class="no">ขวด 3 · แตะเพื่อเลือก</span><span class="name">ลมวิ่งตามล้อ</span><span class="en">Passing Breeze</span><span class="from">กลิ่นในขวด: Blue Ocean</span><span class="meaning">ลมสดที่พัดตามรถม้าไปตลอดทาง แทนความอิสระและการเปิดใจรับสิ่งใหม่</span></button>
+<section class="section"><div class="card"><div class="th"><span>NO. 02 · 01</span><span>[STORY]</span></div><p>ที่สถานีรถม้า เสียงกีบม้าเคาะถนนเป็นจังหวะเดียวกันทั้งวัน กลิ่นหนังเก่า ไม้ และหญ้าข้างทางลอยตามล้อไป</p><p>Noir Carriage คือกลิ่นของคนที่ไม่รีบ เข้ม เงียบ และมีเรื่องเล่าในตัวเอง เหมาะกับค่ำคืนที่อยากอยู่กับตัวเอง</p></div></section>
+
+<section class="section sec-b"><div class="sec-h"><span>NO. 02 · 02</span><span>[BOTTLES]</span></div>
+<h2 class="h2o">สามขวดในเซ็ตนี้</h2>
+<div class="hint o">เลื่อนดูทีละขวด แตะเพื่อเลือกขวดที่อยากลอง แล้วดูวิธีผสมกลิ่นของคุณเอง</div>
+<div class="rail">
+<button type="button" class="bottle" aria-pressed="false" data-no="1" data-name="ผู้โดยสารเงียบ" data-short="ความสุภาพและความนุ่มนวล">
+<span class="im"><img src="bottle.jpg" alt="ขวดดรอปเปอร์ 5 ml" width="520" height="217"><span class="lb"><b>QUIET PASSENGER</b><i>น้ำอบไทย</i></span></span>
+<span class="nm">QUIET PASSENGER</span>
+<span class="rw"><span>[น้ำอบไทย]</span><span>01 / 03</span></span>
+<span class="ln"></span>
+<span class="th-n">ผู้โดยสารเงียบ</span>
+<span class="ds">ความนุ่มของน้ำอบไทยที่ห่อหุ้มกลิ่นเข้มไว้ แทนความสุภาพของคนที่นั่งมองเมืองผ่านไป</span>
+<span class="no">ขวด 1 · แตะเพื่อเลือก</span>
+</button>
+<button type="button" class="bottle" aria-pressed="false" data-no="2" data-name="ล้อไม้เก่า" data-short="ความมั่นคงและความทรงจำ">
+<span class="im"><img src="bottle.jpg" alt="ขวดดรอปเปอร์ 5 ml" width="520" height="217"><span class="lb"><b>OLD WHEEL</b><i>CEDARWOOD</i></span></span>
+<span class="nm">OLD WHEEL</span>
+<span class="rw"><span>[CEDARWOOD]</span><span>02 / 03</span></span>
+<span class="ln"></span>
+<span class="th-n">ล้อไม้เก่า</span>
+<span class="ds">กลิ่นไม้ซีดาร์ของล้อและตัวรถที่ผ่านทางเดิมมานาน แทนความมั่นคงและความทรงจำที่ไม่จางไปไหน</span>
+<span class="no">ขวด 2 · แตะเพื่อเลือก</span>
+</button>
+<button type="button" class="bottle" aria-pressed="false" data-no="3" data-name="ลมวิ่งตามล้อ" data-short="อิสระและความสดชื่น">
+<span class="im"><img src="bottle.jpg" alt="ขวดดรอปเปอร์ 5 ml" width="520" height="217"><span class="lb"><b>PASSING BREEZE</b><i>BLUE OCEAN</i></span></span>
+<span class="nm">PASSING BREEZE</span>
+<span class="rw"><span>[BLUE OCEAN]</span><span>03 / 03</span></span>
+<span class="ln"></span>
+<span class="th-n">ลมวิ่งตามล้อ</span>
+<span class="ds">ลมสดที่พัดตามรถม้าไปตลอดทาง แทนความอิสระและการเปิดใจรับสิ่งใหม่</span>
+<span class="no">ขวด 3 · แตะเพื่อเลือก</span>
+</button>
+</div>
 <div class="mix" aria-live="polite">
-<div class="kicker">กลิ่นที่คุณผสม</div>
+<div class="kicker">[YOUR BLEND] กลิ่นที่คุณผสม</div>
 <div class="mix-title" id="mix-title">ยังไม่ได้เลือกขวด</div>
 <div class="mix-text" id="mix-text">แตะขวดด้านบนอย่างน้อยหนึ่งขวด จะบอกวิธีหยดให้</div>
 <div class="mix-drops" id="mix-drops">หยดแค่ 1–2 หยดก็พอ</div>
-</div>
 </div></section>
-<section class="section"><div class="card">
-<h2>วิธีใช้แผ่นหอม</h2>
-<div class="step"><b>1</b><div>หยดน้ำหอม 1–2 หยดลงบนแผ่นดินขาวลำปาง</div></div>
-<div class="step"><b>2</b><div>ออกแบบกลิ่นได้ตามใจ ใช้กลิ่นเดียว ผสมสองกลิ่น หรือผสมทั้งสามขวดก็ได้</div></div>
-<div class="step"><b>3</b><div>กลิ่นบนแผ่นอยู่ได้ประมาณ 1–2 เดือน เมื่อจางลงจึงหยดใหม่หรือเปลี่ยนสูตรได้</div></div>
-<div class="note">น้ำหอมออกแบบมาให้ใช้งานอย่างปลอดภัย ใช้หยดบนแผ่นดินขาวเท่านั้น ไม่ใช้กับผิวโดยตรง เก็บให้พ้นมือเด็กและสัตว์เลี้ยง</div>
-</div></section>
-<section class="section"><div class="card">
-<h2>ดินขาวลำปาง</h2>
-<p>แผ่นหอมปั้นจากดินขาวจังหวัดลำปาง เผาที่อุณหภูมิที่ยังเหลือรูพรุนเล็กๆ ในเนื้อดิน เพื่อให้ดูดซับน้ำหอมและค่อยๆ ปล่อยกลิ่นออกมาตลอด 1–2 เดือน ลวดลายนูนต่ำแต่ละแผ่นอาจต่างกันเล็กน้อยเพราะทำด้วยมือ</p>
-</div></section>
-<section class="section"><a class="cta" href="https://www.instagram.com/mumoooood" target="_blank" rel="noopener">ทักร้านหรือสั่งน้ำหอมเติมที่ Instagram @mumoooood</a></section>
-<section class="section"><div class="card">
-<h2>สี่ฉากของลำปาง</h2>
-<nav class="chips" aria-label="เลือกกลิ่น">
+<section class="section"><div class="card"><div class="th"><span>NO. 02 · 03</span><span>[HOW TO]</span></div><h2>วิธีใช้แผ่นหอม</h2><div class="step"><b>1</b><div>หยดน้ำหอม 1–2 หยดลงบนแผ่นดินขาวลำปาง</div></div><div class="step"><b>2</b><div>ออกแบบกลิ่นได้ตามใจ ใช้กลิ่นเดียว ผสมสองกลิ่น หรือผสมทั้งสามขวดก็ได้</div></div><div class="step"><b>3</b><div>กลิ่นบนแผ่นอยู่ได้ประมาณ 1–2 เดือน เมื่อจางลงจึงหยดใหม่หรือเปลี่ยนสูตรได้</div></div><div class="note">น้ำหอมออกแบบมาให้ใช้งานอย่างปลอดภัย ใช้หยดบนแผ่นดินขาวเท่านั้น ไม่ใช้กับผิวโดยตรง เก็บให้พ้นมือเด็กและสัตว์เลี้ยง</div></div></section>
+
+<section class="section"><div class="card"><div class="th"><span>NO. 02 · 04</span><span>[CLAY]</span></div><h2>ดินขาวลำปาง</h2><p>แผ่นหอมปั้นจากดินขาวจังหวัดลำปาง เผาที่อุณหภูมิที่ยังเหลือรูพรุนเล็กๆ ในเนื้อดิน เพื่อให้ดูดซับน้ำหอมและค่อยๆ ปล่อยกลิ่นออกมาตลอด 1–2 เดือน ลวดลายนูนต่ำแต่ละแผ่นอาจต่างกันเล็กน้อยเพราะทำด้วยมือ</p></div></section>
+
+<section class="section"><div class="card"><div class="th"><span>NO. 02 · 05</span><span>[CONTACT]</span></div><h2>อยากได้กลิ่นเติม<br>หรืออยากถามเรื่องกลิ่น?</h2><p>ทักมาที่ Instagram ได้เลย เราตอบเอง</p><a class="btn" href="https://www.instagram.com/mumoooood" target="_blank" rel="noopener"><span>[ + ] ทักร้าน</span><span>@mumoooood ↗</span></a></div></section>
+
+<section class="section"><div class="card"><div class="th"><span>NO. 02 · 06</span><span>[SCENES]</span></div><h2>สี่ฉากของลำปาง</h2><nav class="chips" aria-label="เลือกกลิ่น">
 <a href="morning-alms.html">1 · Morning Alms</a>
 <a href="noir-carriage.html" aria-current="page">2 · Noir Carriage</a>
 <a href="heirloom.html">3 · Heirloom</a>
 <a href="sunkiss-voice.html">4 · Sunkiss Voice</a>
-</nav>
-</div></section>
+</nav></div></section>
+
 </main>
-<footer class="footer"><img src="logo-dark.png" alt="mumoood"><p>แบรนด์ที่สร้างภายใต้โครงการ Lanna Living Lab<br>ปั้นด้วยมือจากดินขาวลำปาง</p></footer>
+<footer class="footer"><img src="logo-dark.png" alt="mumoooood"><p>แบรนด์ที่สร้างภายใต้โครงการ Lanna Living Lab<br>ปั้นด้วยมือจากดินขาวลำปาง</p></footer>
+<div class="bar"></div><div class="barno">0 3 0 4 0 3 1 0 2 9</div>
 </div>
 </div>
 <script src="app.js"></script>
