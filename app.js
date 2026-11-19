@@ -27,6 +27,7 @@
       x = shorts.join(' · ');
       d = 'หยดขวดละ 1 หยด แล้วรอสักครู่ก่อนเติม';
     }
+    if (chosen.some(function (b) { return b.dataset.glitter === '1'; })) { d += ' · ขวดที่มี SHAKE WELL ให้เขย่าแรงๆ ก่อนหยด'; }
     titleEl.textContent = t;
     textEl.textContent = x;
     dropsEl.textContent = d;

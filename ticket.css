@@ -77,3 +77,10 @@ body{background:var(--pg);color:var(--ink)}
 
 .sound-btn{opacity:.5}
 .footer p{font-size:12px}
+
+.bottle .shake{display:inline-block;align-self:flex-start;border:1.5px solid currentColor;border-radius:999px;padding:6px 13px;font:500 11px/1 var(--mono);letter-spacing:.14em;margin:0 0 16px}
+.gnote{margin:14px 16px 0;font-size:13px;line-height:1.65;color:#4b4b48}
+.place{margin:0 16px 22px}
+.place b{display:block;font-size:24px;font-weight:700;line-height:1.3}
+.place i{display:block;font:500 13px/1.4 var(--mono);letter-spacing:.06em;color:#4b4b48;font-style:normal;margin:2px 0 10px}
+.place p{margin:0;font-size:15px;line-height:1.7}
